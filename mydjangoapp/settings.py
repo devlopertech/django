@@ -11,13 +11,22 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+<<<<<<< HEAD
 import   appdjango
+=======
+
+>>>>>>> e5a4fae5ec0453c87bbb16408f0a64178236c790
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 STATIC_URL = "/static/"
+<<<<<<< HEAD
 STATICFILES_DIRS = [BASE_DIR  /'appdjango'/ 'static']  
 STATIC_ROOT = STATIC_ROOT = BASE_DIR /'appdjango'/ "staticfiles" 
+=======
+STATICFILES_DIRS = [BASE_DIR / "static"]  
+STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles" 
+>>>>>>> e5a4fae5ec0453c87bbb16408f0a64178236c790
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"  # new
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
