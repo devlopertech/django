@@ -3,7 +3,19 @@
     margin: 0%;
     box-sizing: border-box;
 }
+.navbar{
+    width :100%;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: white;
+}
 
+.h-nav{
+    margin-right: auto;
+    width: min-content;
+}
 .form-container{
     width: 100%;
     display: flex;
@@ -72,4 +84,11 @@ input:focus {
 h1{
     text-align: center;
     margin:0px auto;
+}
+
+.mess{
+    position: sticky;
+    top: 0;
+    left: 0%;
+    width: 100%;
 }

@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import logout
 from django.contrib.auth import login as auth_login
+from django.contrib import messages
 # Create your views here.
 def index(request):
     return render(request,'template/index.html')
@@ -39,6 +40,7 @@ def   userlogin(request):
     user=authenticate(username= username, password= password) 
     if user is not None:
       auth_login(request,user)
+      messages.success(request, "Your message has been successfully sent")
       return redirect('/')
 
     else:
